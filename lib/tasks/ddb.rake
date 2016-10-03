@@ -4,9 +4,9 @@ namespace :ddb do
     puts "Creating/Migrating DynamoDB tables..."
     migration = Aws::Record::TableMigration.new(Article)
     migration.create!(
-      provisioned_throughput: {
-        read_capacity_units: 1,
-        write_capacity_units: 1
+      provisioned_throughput: {
+        read_capacity_units: 1,
+        write_capacity_units: 1
       }
     )
 
