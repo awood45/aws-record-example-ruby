@@ -27,6 +27,16 @@ Instructions for macOS using RVM.
 
         bundle install
 
+1.  Configure AWS credentials if you haven't already.
+1.  Create DynamoDB tables
+
+        rails ddb:migrate
+
+1.  Run the server
+
+        rails server
+
+1.  Check out the site on [localhost:3000](http://localhost:3000/)
 
 
 ## Versions
@@ -43,6 +53,8 @@ This is loosely based on the [Rails Getting Started Guide](http://guides.rubyonr
     rails new .
     bundle install
     rails generate controller Welcome index
+    rails g scaffold Articles title text
+    # Delete and edit some files
 
 
 ## License
