@@ -29,10 +29,20 @@ Instructions for macOS using RVM.
 
 
 
-## Version
+## Versions
 
- -  Ruby 2.3.0
- -  Rails 5.0.0.1
+ -  Ruby 2.3 and Rails 5
+
+
+## How was this created?
+
+This is loosely based on the [Rails Getting Started Guide](http://guides.rubyonrails.org/getting_started.html).
+
+    mkdir aws-record-example-ruby
+    cd aws-record-example-ruby
+    rails new .
+    bundle install
+    rails generate controller Welcome index
 
 
 ## License
